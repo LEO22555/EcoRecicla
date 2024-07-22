@@ -6,68 +6,102 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".statistics"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/recicla"
+    android:gravity="center">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="end">
-        <Spinner
-            android:id="@+id/spinner1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:drawable/btn_dropdown"
-            android:spinnerMode="dropdown"/>
-    </LinearLayout>
+        app:srcCompat="@drawable/ecorecicla2"
+        tools:layout_editor_absoluteX="93dp"
+        tools:ignore="MissingConstraints" />
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="15dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="190dp"
-            android:background="@drawable/rounded_corner"
-            android:gravity="center"
-            android:padding="65dp"
-            android:text="Promedio"
-
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="190dp"
-            android:background="@drawable/rounded_corner"
-            android:gravity="center"
-            android:padding="65dp"
-            android:text="Minimo"
-            android:layout_marginRight="10dp"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="190dp"
-            android:background="@drawable/rounded_corner"
-            android:gravity="center"
-            android:padding="65dp"
-            android:text="Maximo"
-
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-
-        <ImageView
+        android:layout_height="match_parent">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:srcCompat="@drawable/estadistica" />
-    </LinearLayout>
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end">
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:spinnerMode="dropdown"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="190dp"
+                    android:background="@drawable/rounded_corner"
+                    android:gravity="center"
+                    android:padding="65dp"
+                    android:text="Promedio"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="190dp"
+                    android:background="@drawable/rounded_corner"
+                    android:gravity="center"
+                    android:padding="65dp"
+                    android:text="Minimo"
+                    android:layout_marginRight="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="190dp"
+                    android:background="@drawable/rounded_corner"
+                    android:gravity="center"
+                    android:padding="65dp"
+                    android:text="Maximo"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:srcCompat="@drawable/estadistica" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/buttonGoBackStatistics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:backgroundTint="#008000"
+                    android:text="Atras"
+                    tools:ignore="HardcodedText,MissingConstraints"
+                    tools:layout_editor_absoluteX="5dp"
+                    tools:layout_editor_absoluteY="685dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.appcompat.widget.LinearLayoutCompat>
